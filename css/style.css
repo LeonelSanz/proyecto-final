@@ -1,0 +1,220 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.subir{
+    height: 40px;
+    width: 40px;
+    background-color: rgba(183,65,65,255);
+    border: 5px solid white;
+    color: white;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 10px rgb(0, 0, 0);
+}
+.subir:hover{
+    background-color: rgb(100, 28, 52);
+    border: 6px solid rgb(236, 14, 14);
+    color: black;
+}
+
+/* Comienzo header */
+.nav{
+    background-color: rgba(183,65,65,255);
+
+}
+.logo{
+    width: 175px;
+    height: 100px;
+}
+.logo:hover{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.navUl{
+    float: right;
+    list-style: none;
+}
+.navUl li{
+    display: inline-block;
+}
+.navA{
+    text-decoration: none;
+    font-size: 35px;
+    padding: 10px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline-block;
+}
+.navA:hover{
+    color: red;
+}
+/* Fin header */
+
+.h1Index{
+    text-align: center;
+    color: white;
+    background-image: url(https://www.ivrea.com.ar/img/bg.jpg);
+    -webkit-text-stroke: 1px rgb(238, 0, 0);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Comienzo section mangas */
+.h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 5px;
+    padding-top: 25px;
+    padding-left: 20px;
+}
+.mangas{
+    background-image: url(https://www.ivrea.com.ar/img/bg.jpg);
+    text-align: center;
+}
+.mangasImg{
+    margin: 5px;
+    padding: 6px;
+    width: 255px;
+    height: 373.5px;
+}
+.mangasImg:hover{
+    width: 245px;
+    height: 363.5px;
+    margin: 10px;
+}
+.prev-next-color{
+    color: red;
+}
+/* Fin section mangas */
+
+/* Comienzo section productos */
+.productos{
+    padding: 5px 10px 5px 10px;
+    background-color: rgba(183,65,65,255);
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(2, fr);
+    grid-template-areas: 
+    ". cardh2 cardh2 ."
+    "card1 card2 card3 card4"
+    ;
+}
+/* Vista mediana */
+@media screen and (max-width: 1080px) {
+    .productos{
+        padding: 5px 10px 5px 10px;
+        background-color: rgba(183,65,65,255);
+        text-align: center;
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: repeat(3, fr);
+        grid-template-areas: 
+        "cardh2 cardh2"
+        "card1 card2"
+        "card3 card4"
+        ;
+    }
+}
+/* Vista chica */
+@media screen and (max-width: 575px) {
+    .productos{
+        padding: 5px 10px 5px 10px;
+        background-color: rgba(183,65,65,255);
+        text-align: center;
+        display: grid;
+        grid-template-columns: repeat(1, 100%);
+        grid-template-rows: repeat(5, fr);
+        grid-template-areas: 
+        "cardh2"
+        "card1"
+        "card2"
+        "card3"
+        "card4"
+        ;
+    }
+}
+.cardh2{
+    grid-area: cardh2;
+}
+.card1{
+    grid-area: card1;
+}
+.card2{
+    grid-area: card2;
+}
+.card3{
+    grid-area: card3;
+}
+.card4{
+    grid-area: card4;
+}
+.cardProductos:hover{
+    width: 280px;
+    height: 280px;
+    padding: 6px;
+}
+.div h5{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    font-size: 25px;
+    margin: 5px;
+    padding: 5px;
+}
+/* Fin section productos */
+
+/* Comienzo Footer */
+footer{
+    width: 100%;
+    height: 60px;
+    text-align: center;
+}
+footer p{
+    float: left;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 10px;
+    color: rgba(183,65,65,0.7);
+    margin-left: 10px;
+    margin-top: 10px;
+}
+footer i{
+    font-size: 30px;
+    color: rgba(183,65,65,255);
+    letter-spacing: 20px;
+    float: right;
+    padding-bottom: 10px;
+    padding-top: 15px;
+}
+footer div{
+    padding-right: 60px;
+}
+/* Fin Footer */
+
+/* Comienzo pagina mangas */
+.h1Mangas{
+    background-image: url(https://www.ivrea.com.ar/img/bg.jpg);
+    text-align: center;
+    color: rgba(183,65,65,255);
+    text-shadow: 3px 3px 1px rgb(37, 37, 37);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 8px;
+}
+.mangasBackground1{
+    background-image: url(https://www.ivrea.com.ar/img/bg.jpg);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.mangasBackground2{
+    background-image: url(https://www.ivrea.com.ar/img/bg.jpg);
+    background-color: rgba(190, 30, 30, 0.705);
+    background-blend-mode: darken;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+/* Fin pagina mangas */
