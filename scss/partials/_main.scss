@@ -1,0 +1,159 @@
+@import "../variables/variables";
+@import "../sass2/mixin";
+
+.h1Index{
+    text-align: center;
+    color: white;
+    background-image: url(https://www.ivrea.com.ar/img/bg.jpg);
+    -webkit-text-stroke: 1px $rojo-claro;
+    font-family: $letra-main;
+}
+
+/* Comienzo section mangas */
+.h2{
+    font-family: $letra-main;
+    margin: 5px;
+    padding-top: 25px;
+    padding-left: 20px;
+}
+.mangas{
+    background-image: url(https://www.ivrea.com.ar/img/bg.jpg);
+    text-align: center;
+}
+.mangasImg{
+    @include mangasImg;
+}
+.mangasImg:hover{
+    width: 245px;
+    height: 363.5px;
+    margin: 10px;
+}
+.prev-next-color{
+    color: red;
+}
+/* Fin section mangas */
+
+/* Comienzo section productos */
+.productos{
+    padding: 5px 10px 5px 10px;
+    background-color: $rojo-claro;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(2, fr);
+    grid-template-areas: 
+        ". cardh2 cardh2 ."
+        "card1 card2 card3 card4"
+        ;
+}
+/* Vista mediana */
+@media screen and (max-width: 1080px) {
+    .productos{
+        padding: 5px 10px 5px 10px;
+        background-color: $rojo-claro;
+        text-align: center;
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: repeat(3, fr);
+        grid-template-areas: 
+            "cardh2 cardh2"
+            "card1 card2"
+            "card3 card4"
+            ;
+    }
+}
+/* Vista chica */
+@media screen and (max-width: 575px) {
+    .productos{
+        padding: 5px 10px 5px 10px;
+        background-color: $rojo-claro;
+        text-align: center;
+        display: grid;
+        grid-template-columns: repeat(1, 100%);
+        grid-template-rows: repeat(5, fr);
+        grid-template-areas: 
+            "cardh2"
+            "card1"
+            "card2"
+            "card3"
+            "card4"
+        ;
+    }
+}
+.cardh2{
+    grid-area: cardh2;
+}
+.card1{
+    grid-area: card1;
+}
+.card2{
+    grid-area: card2;
+}
+.card3{
+    grid-area: card3;
+}
+.card4{
+    grid-area: card4;
+}
+.cardProductos:hover{
+    width: 280px;
+    height: 280px;
+    padding: 6px;
+}
+.div h3{
+    font-family: $letra-main;
+    color: white;
+    font-size: 25px;
+    margin: 5px;
+    padding: 5px;
+}
+/* Fin section productos */
+
+/* Comienzo pagina mangas */
+.h1Mangas{
+    background-image: url(https://www.ivrea.com.ar/img/bg.jpg);
+    text-align: center;
+    color: $rojo-claro;
+    text-shadow: 3px 3px 1px rgb(37, 37, 37);
+    font-family: $letra-main;
+    padding: 8px;
+}
+.mangasBackground1{
+    background-image: url(https://www.ivrea.com.ar/img/bg.jpg);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.mangasBackground2{
+    background-image: url(https://www.ivrea.com.ar/img/bg.jpg);
+    background-color: $rojo-claro;
+    background-blend-mode: darken;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+/* Fin pagina mangas */
+
+/* Comienzo pagina productos */
+.pagProductos{
+    padding: 5px;
+    background-image: url(https://www.ivrea.com.ar/img/bg.jpg);
+    display: flex;
+    justify-content: center;
+}
+.productosImg1{
+    @include productosImg1;
+}
+.productosImg1:hover{
+    width: 165px;
+    height: 240px;
+    margin: 10px;
+}
+.productosDivAP{
+    font-family: $letra-main;
+    color: black;
+    font-size: 25px;
+    margin: 5px;
+    padding: 5px;
+}
+/* Fin pagina productos */
