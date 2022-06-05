@@ -181,7 +181,7 @@
 /* Comienzo Footer */
 footer {
   width: 100%;
-  height: 60px;
+  height: 100%;
   text-align: center; }
   footer p {
     float: left;
@@ -220,3 +220,10 @@ footer {
   background-color: #641c34;
   border: 6px solid #ec0e0e;
   color: black; }
+
+.form {
+  text-align: center;
+  margin-left: 25%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  width: 50%; }
