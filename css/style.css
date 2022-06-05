@@ -70,52 +70,11 @@
 .productos {
   padding: 5px 10px 5px 10px;
   background-color: #b74141;
-  text-align: center;
-  display: grid;
-  grid-template-columns: repeat(4, 25%);
-  grid-template-rows: repeat(2, fr);
-  grid-template-areas: ". cardh2 cardh2 ." "card1 card2 card3 card4"; }
-
-/* Vista mediana */
-@media screen and (max-width: 1080px) {
-  .productos {
-    padding: 5px 10px 5px 10px;
-    background-color: #b74141;
-    text-align: center;
-    display: grid;
-    grid-template-columns: repeat(2, 50%);
-    grid-template-rows: repeat(3, fr);
-    grid-template-areas: "cardh2 cardh2" "card1 card2" "card3 card4"; } }
-
-/* Vista chica */
-@media screen and (max-width: 575px) {
-  .productos {
-    padding: 5px 10px 5px 10px;
-    background-color: #b74141;
-    text-align: center;
-    display: grid;
-    grid-template-columns: repeat(1, 100%);
-    grid-template-rows: repeat(5, fr);
-    grid-template-areas: "cardh2" "card1" "card2" "card3" "card4"; } }
-
-.cardh2 {
-  grid-area: cardh2; }
-
-.card1 {
-  grid-area: card1; }
-
-.card2 {
-  grid-area: card2; }
-
-.card3 {
-  grid-area: card3; }
-
-.card4 {
-  grid-area: card4; }
+  text-align: center; }
 
 .cardProductos:hover {
-  width: 280px;
-  height: 280px;
+  width: 270px;
+  height: 260px;
   padding: 6px; }
 
 .div h3 {
